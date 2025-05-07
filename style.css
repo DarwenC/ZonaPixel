@@ -11,8 +11,10 @@ body {
   font-family: 'Outfit', sans-serif;
   background-color: #f8f9fa;
   color: #1a1a1a;
+  line-height: 1.6;
 }
 
+/* Header */
 .site-header {
   background: #fff;
   padding: 1rem 2rem;
@@ -56,6 +58,11 @@ body {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0077cc;
 }
 
 .nav-button {
@@ -67,6 +74,7 @@ body {
   font-weight: 600;
 }
 
+/* Banner */
 .banner {
   background-color: #fff3cd;
   color: #856404;
@@ -76,6 +84,7 @@ body {
   font-size: 1.1rem;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 4rem 2rem;
@@ -103,36 +112,53 @@ body {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-.services-section,
-.portfolio-section,
-.about-section,
-.contact-section {
+.cta-button:hover {
+  background-color: #005fa3;
+}
+
+/* Sections */
+section {
   padding: 4rem 2rem;
   text-align: center;
 }
 
-.services-container {
+.services-container, .portfolio-grid, .testimonials-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
-.service-card {
+.service-card, .portfolio-item, .testimonial-card {
   background-color: #ffffff;
   border: 1px solid #ddd;
   padding: 2rem;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.service-card:hover {
+.service-card:hover,
+.portfolio-item:hover,
+.testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0077cc;
+}
+
+/* Contact Form */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -157,8 +183,14 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
 .site-footer {
   background-color: #1a1a1a;
   color: #fff;
@@ -172,9 +204,15 @@ body {
   color: #ffffff;
   text-decoration: underline;
   margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
+.site-footer a:hover {
+  color: #0077cc;
+}
+
+/* Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }

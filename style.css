@@ -1,4 +1,6 @@
 /* Base Styling */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Outfit', sans-serif;
   background-color: #f8f9fa;
   color: #1a1a1a;
   line-height: 1.6;
@@ -16,6 +18,9 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Header */
@@ -27,27 +32,42 @@ body {
 }
 
 .logo {
-  height: 48px;
-  vertical-align: middle;
+  height: 60px;
 }
 
 .nav-bar ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 2rem;
-  margin-top: -40px;
 }
 
 .nav-bar a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .nav-bar a:hover {
   color: #0077cc;
+}
+
+.nav-button {
+  background-color: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #005fa3;
 }
 
 /* Hero */
@@ -175,7 +195,19 @@ body {
   background-color: #1a1a1a;
   color: #fff;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
   margin-top: 2rem;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+  color: #0077cc;
 }

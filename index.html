@@ -1,82 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ZonaPixel Web Solutions</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="logo.png" href="ZonaPixel.png">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
+
   <header class="site-header">
-    <div class="container">
-      <img src="logo.png" alt="ZonaPixel Logo" class="logo">
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="logo-group">
+      <img src="ZonaPixel.png" alt="ZonaPixel Logo" class="logo"/>
+      <div>
+        <div class="company-title">ZonaPixel</div>
+        <div class="company-tagline">Web Solutions</div>
+      </div>
     </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#quote" class="nav-button">Free Quote</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1>Precision Pixels. Powerful Presence.</h1>
-      <p>Your vision brought to life through elite web design and digital solutions.</p>
-      <a href="#contact" class="cta-button">Start Your Project</a>
-    </div>
+  <div class="banner">
+    🚀 Now offering FREE consultations – Let’s plan your next digital solution!
+  </div>
+
+  <section class="hero" id="hero">
+    <h1>Precision Pixels. Powerful Presence.</h1>
+    <p>Your vision brought to life through elite web design and digital solutions.</p>
+    <a href="#quote" class="cta-button">Start Your Project</a>
   </section>
 
-  <section id="services" class="services-section">
+  <section class="services-section" id="services">
     <h2>What We Do</h2>
     <div class="services-container">
-      <div class="service-card">
-        <h3>Custom Web Design</h3>
-        <p>Crafted HTML, CSS, JavaScript, GitHub & Webflow sites tailored to your brand.</p>
-      </div>
-      <div class="service-card">
-        <h3>Brand Identity</h3>
-        <p>From logos to complete design systems, we ensure consistency and impact.</p>
-      </div>
-      <div class="service-card">
-        <h3>SEO & Performance</h3>
-        <p>Speed, structure, and search visibility built directly into your site architecture.</p>
-      </div>
-      <div class="service-card">
-        <h3>Hosting Support</h3>
-        <p>Need it launched? We host or handoff. Self-serve or fully-managed solutions.</p>
-      </div>
+      <div class="service-card">Custom Web Design</div>
+      <div class="service-card">Brand Identity</div>
+      <div class="service-card">SEO & Performance</div>
+      <div class="service-card">Hosting Support</div>
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio-section">
-    <h2>Showcase</h2>
-    <p>Sites we’ve brought to life — scroll-worthy, scalable, and stunning.</p>
-    <div class="portfolio-grid">
-      <!-- Portfolio items can go here -->
-    </div>
+  <section class="portfolio-section" id="portfolio">
+    <h2>Our Work</h2>
+    <p>Coming Soon – A showcase of sites we’ve built and brands we’ve launched.</p>
   </section>
 
-  <section id="about" class="about-section">
-    <h2>Why ZonaPixel?</h2>
-    <p>We’re more than code and canvas. We’re creators that solve problems through interactive digital design. Our goal: turn users into loyal customers by delivering elegance and functionality without compromise.</p>
+  <section class="about-section" id="about">
+    <h2>About ZonaPixel</h2>
+    <p>ZonaPixel is dedicated to turning bold ideas into brilliant digital realities. We build with intent, clarity, and performance in mind.</p>
   </section>
 
-  <section id="contact" class="contact-section">
-    <h2>Let’s Build Something</h2>
+  <section class="contact-section" id="contact">
+    <h2>Get in Touch</h2>
     <form class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer class="site-footer">
-    <p>&copy; 2025 ZonaPixel Web Solutions. All rights reserved.</p>
+    &copy; 2025 ZonaPixel. All rights reserved. | <a href="#hero">Back to top</a>
   </footer>
+
 </body>
 </html>
